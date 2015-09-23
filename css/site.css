@@ -1,0 +1,337 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Museo";
+    src: url("fonts/MuseoSans_500-webfont.eot");
+    src: url("fonts/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/MuseoSans_500-webfont.woff2") format("woff2"),
+         url("fonts/MuseoSans_500-webfont.woff") format("woff"),
+         url("fonts/MuseoSans_500-webfont.ttf") format("truetype"),
+         url("fonts/MuseoSans_500-webfont.svg#museo_sans500") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Sina";
+    src: url("fonts/SinaReg-webfont.eot");
+    src: url("fonts/SinaReg-webfont.eot?#iefix") format("embedded-opentype"),
+         url("fonts/SinaReg-webfont.woff2") format("woff2"),
+         url("fonts/SinaReg-webfont.woff") format("woff"),
+         url("fonts/SinaReg-webfont.ttf") format("truetype"),
+         url("fonts/SinaReg-webfont.svg#sina-regularregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Base Elements */
+
+* {
+    font-family: Sina, Arial, sans-serif;
+}
+
+body {
+    max-height: 95%;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: Museo, Sina, Arial, sans-serif;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+/* Top Row */
+
+#row-top {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.h2-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+/* Bottom Row */
+
+#row-bottom {
+    margin-bottom: 0px;
+}
+
+/* Left Column */
+
+#left {
+    
+}
+
+#password-options-title {
+    height: 40px;
+    padding: 0px 16px;
+    line-height: 40px;
+    font-family: Museo, Sina, Arial, sans-serif;
+    text-align: center;
+    color: #5c78a9 !important;
+    background-color: #fff !important;
+    border: 1px solid #5c78a9 !important;
+}
+
+.h4-title {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#number-words-title {
+    margin: 32px 0px 24px 0px;
+}
+
+#customize-title {
+    margin: 42px 0px 16px 0px;
+}
+
+#spacers-title {
+    margin: 42px 0px 16px 0px;
+}
+
+#case-title {
+    margin: 24px 0px 16px 0px;
+}
+
+.xkcd-color {
+    font-family: Museo, Sina, Arial, sans-serif !important;
+    color: #5c78a9 !important;
+    background-color: #fff !important;
+    border: 1px solid #5c78a9 !important;
+    outline: none !important;
+    transition: background-color 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) !important;
+}
+
+.xkcd-color:active,
+.xkcd-color:focus,
+.xkcd-color:visited {
+    color: #5c78a9 !important;
+    background-color: #fff !important;
+}
+
+.xkcd-color:hover {
+    color: #fff !important;
+    background-color: #5c78a9 !important;
+}
+
+.xkcd-color[disabled]:hover {
+    color: #5c78a9 !important;
+    background-color: #fff !important;
+}
+
+.range-slider {
+    height: 8px;
+    margin: 0px 0px 30px 0px;
+    border: 1px solid #5c78a9;
+}
+
+.range-slider-active-segment {
+    height: 6px;
+    background-color: #fff;
+}
+
+.range-slider-handle {
+    top: -14px;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.range-slider.disabled,
+.range-slider[disabled] {
+    border: 1px solid rgb(150, 150, 150) !important;
+    background: #fff !important;
+    cursor: default !important;
+}
+
+.range-slider.disabled .range-slider-handle,
+.range-slider[disabled] .range-slider-handle {
+    color: rgb(150, 150, 150) !important;
+    border: 1px solid rgb(150, 150, 150) !important;
+    opacity: 1.0 !important;
+    cursor: default !important;
+}
+
+.range-slider.disabled .range-slider-handle:hover,
+.range-slider[disabled] .range-slider-handle:hover {
+    background: #fff !important;
+}
+
+.checkbox-row {
+    height: 24px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.checkbox-row-grouped {
+    height: 24px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.checkbox-label {
+    float: left;
+    height: 24px;
+    width: 90%;
+    line-height: 24px;
+}
+
+.checkbox-box {
+    float: right;
+    height: 18px;
+    width: 18px;
+    margin: 3px 0px 0px 0px !important;
+    cursor: pointer;
+}
+
+/* Right Column */
+
+#right {
+    padding-left: 4.5rem;
+}
+
+#generate-button {
+    height: 50px;
+    width: 200px;
+    padding: 0px 16px;
+    margin: -5px 0px 36px 190px;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul.accordion {
+    margin-left: 0px;
+}
+
+.accordion-navigation {
+    border-bottom: 4px solid #fff;
+}
+
+.accordion-href {
+    height: 40px !important;
+    line-height: 40px !important;
+    padding: 0px 16px !important;
+}
+
+.discussion {
+    margin: 0px;
+    color: rgb(34, 34, 34);
+}
+
+#pic {
+    width: 300px;
+    margin-left: 125px;
+}
+
+#xkcd-button {
+    display: block;
+    height: 40px;
+    padding: 0px 16px;
+    line-height: 40px;
+}
+
+#xkcd-button:hover {
+    color: #fff !important;
+    background-color: #5c78a9 !important;
+}
+
+.xkcd-center {
+    width: 105px;
+    margin: 15px auto 0 auto;
+}
+
+/* Modified from: http://zurb.com/building-blocks/image-hover-effects */
+
+.image-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-overlay-content {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+
+.overlay-fade-in-new-background .button {
+    position: relative;
+    opacity: 0;
+}
+
+.overlay-fade-in-new-background .image-overlay-content {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.9333);
+    transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+    
+.overlay-fade-in-new-background p {
+    opacity: 0;
+    transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+
+.overlay-fade-in-new-background img {
+    transition: all 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+
+.overlay-fade-in-new-background:hover img {
+    -webkit-filter: grayscale(100%);
+    transform: scale(1.5);
+}
+
+.overlay-fade-in-new-background:hover .image-overlay-content {
+    opacity: 1.0;
+}
+
+.overlay-fade-in-new-background:hover  p, .overlay-fade-in-new-background .button {
+    opacity: 1.0;
+}
+
+/* Modal */
+
+.reveal-modal-bg {
+    cursor: pointer;
+}
+
+.reveal-modal {
+    top: 160px;
+    padding: 36px 48px;
+}
+
+.password {
+    margin: 12px 0;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.lead {
+    margin: 0;
+}
+
+a.close-reveal-modal {
+    color: #5c78a9 !important;
+    transition: color 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+
+a.close-reveal-modal:visited {
+    color: #5c78a9 !important;
+}
+
+a.close-reveal-modal:hover {
+    color: rgb(34, 34, 34) !important;
+}
